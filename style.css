@@ -169,7 +169,7 @@ header .logo {
 .search-wrapper {
   position: relative;
   width: 100%;
-  max-width: 420px;
+  max-width: 620px;
   margin-top: 45px
 }
 
@@ -178,8 +178,8 @@ header .logo {
   padding: 7px 22px;
   border-radius: 999px;
   border: 1px solid #e5e7eb;
-  font-size: 15px;
-  outline: none;
+  font-size: 14px;
+  outline: none;  
   background: #f8fafc;
 }
 
