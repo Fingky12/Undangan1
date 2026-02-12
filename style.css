@@ -10,7 +10,7 @@
 
 
 :root {
-  --m: #9b2323; /* Maroon1 */
+  --m: rgb(155, 35, 35); /* Maroon1 */
   --m2: #69111d; /* Maroon2 */
   --c: #1F1F1F; /* Charcoal */
   --g: #555555; /* Gray */
@@ -131,7 +131,7 @@ header .logo {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../Undangan1/img/png/pngwing.png");
+  background: url("/img/png/pngwing.png");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: contain;
@@ -169,7 +169,6 @@ header .logo {
 .search-wrapper {
   position: relative;
   width: 100%;
-  max-width: 620px;
   margin-top: 45px
 }
 
@@ -256,7 +255,7 @@ header .logo {
   text-decoration: none;
   padding: 6px 10px;
   color: var(--ow);
-  background-color: var(--m);
+  background: linear-gradient(to right, rgb(155, 35, 35), rgb(201, 58, 36));
   border-radius: 20px;
   border: 1.2px solid var(--m);
   font-size: .7rem;
