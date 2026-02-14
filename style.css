@@ -64,16 +64,16 @@ header .logo {
   display: flex;
   text-align: center;
   align-items: center;
-  justify-content: center;
-  gap: 28px;
+  justify-content: end;
+  gap: 8px;
 }
 .navbar a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 28px;
-  padding: 0 50px;
+  width: 80px;
+  /* height: 28px; */
+  padding: 4px 0;
   font-size: .9rem;
   text-decoration: none;
   border-radius: 20px;
@@ -288,7 +288,7 @@ header .logo {
   color: var(--ow);
 }
 
-.section-fitur {
+.fitur-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -302,7 +302,7 @@ header .logo {
   z-index: 1;
 }
 
-.section-fitur::before {
+.fitur-wrapper::before {
   content: '';
   position: absolute;
   top: 0;
@@ -316,13 +316,13 @@ header .logo {
   opacity: 0.15;
 }
 
-.section-fitur h2 {
+.fitur-wrapper h2 {
   font-size: 1.9rem;
   margin-bottom: 6px;
   color: var(--c);
 }
 
-.section-fitur .subfitur {
+.fitur-wrapper .subfitur {
   padding: 0 15%;
   font-size: .8rem;
   margin-bottom: 45px;
