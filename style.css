@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Bebas+Neue&family=Carattere&family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Imperial+Script&family=Lexend+Deca:wght@100..900&family=Lexend+Giga:wght@100..900&family=Lilita+One&family=Luxurious+Script&family=Merriweather:opsz,wght@18..144,300&family=Oswald:wght@200..700&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Tangerine:wght@400;700&family=Varela+Round&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Bebas+Neue&family=Carattere&family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Imperial+Script&family=Lexend+Deca:wght@100..900&family=Lexend+Giga:wght@100..900&family=Lilita+One&family=Luxurious+Script&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@200..700&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Tangerine:wght@400;700&family=Varela+Round&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*  
+
 60% → Ivory / Off White
 25% → Charcoal / Gray
 10% → Maroon
@@ -450,9 +450,11 @@ header .logo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   border-radius: 7px;
-  padding:30px 25px;
+  padding: 28px 21px;
   width: 200px;
+  height: 320px;
   transition: 0.3s ease;
 }
 .pricing-card:hover{
@@ -480,12 +482,13 @@ header .logo {
 }
 
 .plan-name {
+  font-family: "Source Serif 4", serif;
   align-items: center;
   text-align: center;
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 10px;
-  color: var(--m);
+  color: var(--c);
 }
 
 /* .plan-name.starter {
@@ -505,25 +508,29 @@ header .logo {
 } */
 
 .price {
+  font-family: "Source Serif 4", serif;
+  font-weight: 500;
   text-align: center;
   font-size: 16px;
-  font-weight: 800;
-  margin-bottom: 20px;
-  color: var(--c);
+  color: var(--g2);
+  margin-top: auto;
+  margin-bottom: 12px;
 }
 
 .features {
   list-style: none;
-  margin-bottom: 22px;
+  margin-bottom: auto;
 }
 
 .features li {
   margin-bottom:12px;
-  font-size:14px;
+  font-size: .7rem;
   display:flex;
   align-items:center;
   gap:8px;
-  color: var(--g2);
+  color: var(--g);
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
 .bxs-checkbox-checked {
@@ -534,12 +541,14 @@ header .logo {
 }
 
 .btn{
+  font-size: .6rem;
     text-align: center;
-    padding: 4px 12px;
-    border-radius:10px; 
-    font-weight: 500;
+    padding: 5px 11px;
+    border-radius: 7px; 
+    font-weight: 400;
     text-decoration: none;
     transition: 0.3s;
+    width: fit-content;
     display: block;
 }
 
@@ -554,11 +563,11 @@ header .logo {
 }
 
 .btn-outline{
-    border: .12rem solid var(--dr);
-    color:var(--dr);
+  background:var(--m);
+  color:var(--ow);
 }
 
 .btn-outline:hover{
-    background:var(--dr);
-    color:white;
+    background:var(--m2);
+    color:var();
 }
