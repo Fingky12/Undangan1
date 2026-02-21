@@ -1,22 +1,16 @@
-document.addEventListener("DOMContentLoaded", () => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-});
+  function revealOnScroll() {
+    const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
 
-const beranda = document.querySelector(".beranda");
-const fitur = document.querySelector(".fitur-wrapper");
+    reveals.forEach((element) => {
+      const windowHeight = window.innerHeight;
+      const elementTop = element.getBoundingClientRect().top;
+      const revealPoint = 100;
 
-document.getElementsById("beranda").addEventListener("click", () => {
-  document.querySelector("beranda").scrollIntoView({
-        behavior: "smooth"  // biar scroll halus
+      if (elementTop < windowHeight - revealPoint) {
+        element.classList.add('active');
+      }
     });
-});
-document.getElementsById("fitur").addEventListener("click", () => {
-  document.querySelector("fitur").scrollIntoView({
-        behavior: "smooth"  // biar scroll halus
-    });
-});
-document.getElementsById("beranda").addEventListener("click", () => {
-  document.querySelector("beranda").scrollIntoView({
-        behavior: "smooth"  // biar scroll halus
-    });
-});
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
