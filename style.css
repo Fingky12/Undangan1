@@ -2,7 +2,7 @@
 
 :root {
 
-  --mg: #C6A664;
+  --mg: #ffc400;
   --ml: #c03939;
   --m: #a12828;
   --md: #6d0e1b;
@@ -59,7 +59,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--iv);
+  background: transparent;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, .1);
@@ -278,20 +278,18 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
   gap: 25px;
-  width: 80%;
+  width: 100%;
 }
 
 .fitur-card {
   background: var(--iv);
-  padding: 20px;
+  padding: 22px;
   box-shadow: 2px 2px 11px rgba(0,0,0,0.12);
   border-radius: 20px;
-  border: 1px solid transparent;
   transition: 0.4s;
 }
 
 .fitur-card:hover {
-  border: 1px solid rgba(255, 131, 131, 0.1);
   transform: translateY(-6px);
   box-shadow: 2px 2px 20px rgba(0,0,0,0.09);
 }
@@ -357,7 +355,7 @@ header {
 
 .member-icon-starter {
   width: 80px;
-  margin-bottom: 10px;
+  margin: 21px 0;
 }
 
 .member-icon {
@@ -399,15 +397,18 @@ header {
 }
 
 .popular {
-  border: 2px solid #ffc400;
+  border: 1px solid rgb(160, 160, 160);
+}
+.popular:hover {
+  border: 1px solid var(--mg);
 }
 
 .popular-badge {
   position: absolute;
   top: -12px;
   right: 20px;
-  background: #ffc400;
-  color: #000;
+  background: var(--ml);
+  color: var(--ow);
   padding: 5px 12px;
   font-size: 12px;
   border-radius: 20px;
@@ -417,7 +418,7 @@ header {
   font-family: "Libre Baskerville", serif;
   font-size: 2rem;
   font-weight: 600;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .features {
@@ -439,7 +440,7 @@ header {
   font-size: 24px;
   font-weight: 600;
   color: var(--gold-soft);
-  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .btn-outline {
@@ -453,7 +454,7 @@ header {
 
 .btn-outline:hover {
   background: transparent;
-  color: var(--ml);
+  color: var(--mg);
 }
 
 /* =========================
